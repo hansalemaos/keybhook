@@ -11,8 +11,7 @@ This script allows you to hook into the Windows keyboard events and capture the 
 
 ```python
 from keybhook import start_hook, config, VK_CODELETTER
-VK_CODELETTER[193] = ('?', False) # adds not mapped chars (https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes), on my keyboard "?" has the code 193 -  
-it might be different on yours. (2nd value: True if numpad else False)
+VK_CODELETTER[193] = ('?', False) # adds not mapped chars (https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes), on my keyboard "?" has the code 193 -  it might be different on yours. (2nd value: True if numpad else False)
 config.done = False 
 start_hook()
 # example
